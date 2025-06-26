@@ -125,6 +125,7 @@ function initialize() {
   toCurrency.addEventListener("change", () => updateFlag(toCurrency));
   submit.addEventListener("click", getExchange);
   resultBox.innerText = "";
+  amtText.value = "";
 
   console.log("Currency converter initialized");
 }
