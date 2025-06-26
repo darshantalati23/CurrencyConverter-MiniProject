@@ -38,6 +38,11 @@ A sleek and user-friendly currency conversion web application built with modern 
 - `script.js` - Main JavaScript functionality
 - `codes.js` - Currency codes and configurations
 
+## Versions 🆚
+
+1. _V1_ : Basic Converter
+2. _V2_ (current) : Addition of reset and swap buttons
+
 ## Contributing 🤝
 
 Feel free to fork this project and submit pull requests for any improvements!

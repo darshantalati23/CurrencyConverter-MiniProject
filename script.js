@@ -7,6 +7,7 @@ const toImg = document.querySelector("#to img");
 const amtText = document.querySelector("#amt-text");
 const convertLogo = document.querySelector("#convert-logo");
 const submit = document.querySelector("#submit-btn");
+const reset = document.querySelector("#reset-btn");
 const resultBox = document.querySelector("#result-box");
 
 function currencyDrDw() {
@@ -109,8 +110,7 @@ async function getExchange() {
   }
 }
 
-// Start the application when DOM is fully loaded
-document.addEventListener("DOMContentLoaded", () => {
+function initialize() {
   console.log("Initializing currency converter...");
 
   // Populate currency dropdowns
@@ -124,6 +124,18 @@ document.addEventListener("DOMContentLoaded", () => {
   fromCurrency.addEventListener("change", () => updateFlag(fromCurrency));
   toCurrency.addEventListener("change", () => updateFlag(toCurrency));
   submit.addEventListener("click", getExchange);
+  resultBox.innerText = "";
 
   console.log("Currency converter initialized");
+}
+
+// Start the application when DOM is fully loaded
+document.addEventListener("DOMContentLoaded", initialize);
+reset.addEventListener("click", initialize);
+convertLogo.addEventListener("click", () => {
+  let temp = fromCurrency.value;
+  fromCurrency.value = toCurrency.value;
+  toCurrency.value = temp;
+  updateFlag(fromCurrency);
+  updateFlag(toCurrency);
 });

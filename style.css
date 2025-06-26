@@ -107,8 +107,15 @@ p {
 
 #convert-logo {
   border: none;
+  cursor: pointer;
   color: #1d3557;
   scale: 1.5;
+  transition: 0.2s ease-in-out;
+}
+
+#convert-logo:hover {
+  transition: 0.2s ease-in-out;
+  scale: 1.6;
 }
 
 #submit {
