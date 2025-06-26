@@ -1,0 +1,183 @@
+* {
+  margin: 0;
+  padding: 0;
+  /* text-align: center; */
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background-color: #e0e3e6;
+  color: #1d3557;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  min-height: 80vh;
+  flex-direction: column;
+}
+
+#title {
+  margin: 1vmin 0 1vmin 0;
+  align-items: center;
+  height: 8vh;
+}
+
+h2 {
+  font-size: 5vmin;
+  text-align: center;
+  font-weight: bolder;
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 55svh;
+  width: 50vh;
+  justify-content: space-around;
+  background-color: #9ebfee;
+  border-radius: 20px;
+  box-shadow: 0 0 2rem rgba(158, 191, 238, 0.8);
+  padding: 2vmin 0 2vmin 0;
+}
+
+#amt {
+  width: 45vh;
+  height: 10vh;
+  margin: 0 2vmin 0 1vmin;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+p {
+  font-size: 2.5vmin;
+  font-weight: bolder;
+}
+
+#amt-text {
+  height: 5vmin;
+  font-size: 2.5vmin;
+  border: none;
+  border-radius: 5px;
+  padding: 0 0 0 0.5vmin;
+  box-shadow: 0 0.5vmin 0.5rem rgba(29, 53, 87, 0.3);
+  align-items: center;
+  outline: none;
+}
+
+#from-to {
+  width: 50vh;
+  height: 15vh;
+  margin: 1vmin;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 5vmin;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 15vh;
+}
+
+.select-cont {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 11vh;
+  width: 20vh;
+  border: none;
+  padding: 0 0.5vmin 0 0.5vmin;
+}
+
+.to-select {
+  height: 4vmin;
+  font-size: 2vmin;
+  width: 45%;
+  border-radius: 25px;
+  outline: none;
+  border: none;
+  box-shadow: 0 0.25vmin 0.25rem rgba(29, 53, 87, 0.3);
+}
+
+#convert-logo {
+  border: none;
+  color: #1d3557;
+  scale: 1.5;
+}
+
+#submit {
+  width: 45vh;
+  height: 6vh;
+}
+
+#submit-btn {
+  height: 5vh;
+  width: 37vh;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 0.25vmin 0.5rem rgba(29, 53, 87, 0.3);
+  font-size: 3vmin;
+  background-color: #1d3557;
+  color: #9ebfee;
+  font-weight: bolder;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+#submit-btn:hover {
+  box-shadow: 0 0.75vmin 0.75rem rgba(29, 53, 87, 0.5);
+  font-weight: bold;
+  color: #e0e3e6;
+  transition: all 0.2s ease;
+}
+
+#reset-btn {
+  height: 5vh;
+  width: 7vh;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 0.25vmin 0.5rem rgba(29, 53, 87, 0.3);
+  font-size: 3vmin;
+  background-color: #1d3557;
+  color: #9ebfee;
+  font-weight: bolder;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+#reset-btn:hover {
+  box-shadow: 0 0.75vmin 0.75rem rgba(29, 53, 87, 0.5);
+  color: #e0e3e6;
+  transition: all 0.2s ease;
+}
+
+#result {
+  height: 10vmin;
+  font-size: 2.5vmin;
+  display: flex;
+  flex-direction: column;
+  width: 45vh;
+  align-items: flex-start;
+  justify-content: space-evenly;
+}
+
+#result-box {
+  height: 5vmin;
+  font-size: 2.5vmin;
+  font-weight: bolder;
+  display: flex;
+  border: none;
+  border-radius: 5px;
+  padding: 0 0 0 0.5vmin;
+  box-shadow: 0 0.5vmin 0.5rem rgba(29, 53, 87, 0.3);
+  width: 45vh;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}

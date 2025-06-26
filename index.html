@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Currency Converter</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="title">
+      <h2>Currency Converter</h2>
+    </div>
+    <div id="container">
+      <div id="amt">
+        <p>Enter the amount</p>
+        <input type="text" id="amt-text" />
+      </div>
+      <div id="from-to">
+        <div id="from" class="form">
+          <p>From</p>
+          <div class="select-cont">
+            <img src="https://flagsapi.com/IN/flat/64.png" />
+            <select name="to" class="to-select" id="from-sel"></select>
+          </div>
+        </div>
+        <div id="convert-logo">
+          <i class="fa-solid fa-right-left"></i>
+        </div>
+        <div id="to" class="form">
+          <p>To</p>
+          <div class="select-cont">
+            <img src="https://flagsapi.com/US/flat/64.png" />
+            <select name="to" class="to-select" id="to-sel"></select>
+          </div>
+        </div>
+      </div>
+
+      <div id="submit" class="flex justify-between">
+        <button id="submit-btn">Get Amount</button>
+        <button id="reset-btn">
+          <i class="fa-solid fa-rotate-right"></i>
+        </button>
+      </div>
+      <div id="result">
+        <p id="result-text">Converted Amount</p>
+        <div id="result-box">500</div>
+      </div>
+    </div>
+    <script src="codes.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
